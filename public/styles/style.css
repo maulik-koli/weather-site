@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: larger;
+    color: blue;
+}
+
+ul li {
+    color: violet;
+}
+
+img{
+    width: 300px;
+}
+
+header li {
+    text-decoration: none;
+    display: inline;
+    padding: 2vh 1em;
+}
+
+header li a {
+    text-decoration: none;
+    color: black;
+}
+
+header li:hover {
+    color: white;
+    background-color: blue;
+}
+
+header{
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+}
+
+header div{
+    display: inline;
+    padding: 1rem 0;
+}
+
+footer{
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    color: wheat;
+    padding: 1.5vh;
+}
