@@ -5,15 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../public/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../public/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../public/img/favicon-16x16.png">
+    <link rel="manifest" href="../../public/img/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
-    {{>header}}
-    <h1>{{title}} hahahahha</h1>
-    <img src="/img/1k.jpg" alt="image is not load">
-    <p>
-        Something in the way hmmmm.....................................<br>
-        Something in the way hmmmm.....................................
-    </p>
+    <div class="main-container">
+        {{>header}}
+            <div class="sub-container-a">
+                <h2>{{title}}</h2>
+                <p>Welcome to our weather app powered by Node.js, Express.js, and integrated with the Weatherstack and Mapbox APIs. We are passionate about providing accurate and up-to-date weather information to users around the globe in a user-friendly format.</p>
+
+                <h3>Our Mission</h3>
+                <p>Our mission is to deliver reliable weather forecasts efficiently and effectively. By leveraging powerful APIs and modern web technologies, we aim to make weather information easily accessible to everyone.</p>
+
+                <h3>Technologies We Use</h3>
+                <ul>
+                    <li>Node.js: A powerful JavaScript runtime built on Chrome's V8 JavaScript engine, which allows us to run our server-side code.</li>
+                    <li>Express.js: A minimalist web framework for Node.js that helps us build robust web applications and APIs.Weatherstack</li>
+                    <li>API: Provides us with real-time weather data, including current conditions, forecasts, and historical weather information.</li>
+                    <li>Mapbox API: Enables us to convert location coordinates into place names and visualize weather data on interactive maps.</li>
+                </ul>
+                    
+                <h3>How It Works</h3>
+                <ul>
+                    <li>Location Search: Users can enter a location to get weather information.</li>
+                    <li>Current Weather: Our app displays current weather conditions, including temperature, humidity, wind speed, and more.</li>
+                    <li> Forecast: Users can also view a 7-day weather forecast to plan</li>
+                </ul>   
+            </div>
+    </div>
     {{>footer}}
 </body>
 </html>

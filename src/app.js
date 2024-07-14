@@ -1,7 +1,6 @@
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
-const request = require('request')
 const forcast = require('./utils/forcast')
 const geocode = require('./utils/geocode')
 
@@ -19,27 +18,13 @@ app.use(express.static(publicDirectoryPath))
 
 app.get('', (req,res) => {
     res.render('index', {
-        one: "Vengence UwU",
-        two: "The Knight UwU",
-        three: "Batman UwU",
-        title :"Weather",
-        name:"Unknow"
+        title :"Weather"
     })
 })
 
 app.get('/about', (req,res) => {
     res.render('about', {
-        title: "About site",
-        title :"About",
-        name:"Unknow"
-    })
-})
-
-app.get('/help', (req,res) => {
-    res.render('help', {
-        title1: "Taskete",
-        title :"Help",
-        name:"Unknow"
+        title: "About Our Weather App",
     })
 })
 
@@ -68,24 +53,6 @@ app.get('/weather', (req,res) => {
                 address: address
             })
         })
-    })
-})
-
-app.get('/products', (req,res) =>{
-    if(!req.query.search){
-        return res.send({
-            error: "Request Invalid!"
-        })
-    }
-
-    res.send({
-        product: []
-    })
-})
-
-app.get('/help/*', (req,res) => {
-    res.render("error", {
-        message: "Help article not found"
     })
 })
 
